@@ -1,14 +1,13 @@
-# Clown-Sec's Postbot
+# Postbot
 
 ## INDEX
 
-- [Clown-Sec's Postbot](#clown-secs-postbot)
+- [Postbot] (#postbot)
   - [INDEX](#index)
     - [Introduction](#introduction)
     - [Installation](#installation)
 
 ### Introduction
-This bot was created by [Clown-Sec](htt[s://github.com/Clown-Sec]).
 
 A simple telegram bot which will publish your posts to multiple medium, like teelgram channels and groups, discord, instagram, twitter and more in future. **NOTE: This repo is in it's early and development stage, so we suggest others except developers not to use**
 
@@ -19,7 +18,7 @@ While this bot is made up of you have to creat env to isolate this from other pr
 
 * clone the repo
   
-  `git clone https://gihub.com/Clown-Sec/Post-bot.git`
+  `git clone https://github.com/Code-Tamil/Post-bot.git`
 * make secure env for this project using ven
 
      `python3 -m venv env`
