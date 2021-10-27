@@ -1,0 +1,17 @@
+{
+	"Text" : {
+		"START" : "Hi, <b>{}</b> {}\nI am BPanther to help you.\n🌟 Help  -  /help\n🌟 About -  /about",
+		"HELP"  : "Commands Me with These:\n🌟 About bot    - /about \n🌟 Source Code  - /source \n🌟 Add to Group - /addgrp\n🌟 Lipsum Text  - /lorem \n🌟 What's Lipsum? -/whatislorem ",
+		"ABOUT" : "Hi <b>{}</b><pre>[{}]</pre>,\nAfraid Of posting Same messages in Every Social Media?\nI am Here to Kill Your Fear and Stress.\nI will post your message to other Medium.\nlike discord, telegram\nAt a time in One click.\n🌟 Click /help to see What I can do for you",
+		"SOURCE" : "Hi, <b>{}</b>\nI am BPanther to help you.",
+		"LOREM" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"WLOREM" : "<b>What is Lorem Ipsum?</b> \nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." 
+	},
+
+	"Images" : {
+		"START_IMAGE" : "https://wallpaperaccess.com/full/54063.jpg",
+		"SOURCE_IMAGE" : "https://swall.teahub.io/photos/small/142-1427648_black-panther-costume-film.jpg",
+		"HELP_IMAGE" : "https://i.pinimg.com/originals/a0/00/d6/a000d62aa13c57c66c04ac6a77252be5.jpg",
+		"ABOUT_IMAGE" : "https://media.newyorker.com/photos/5a87650156b75c08a3e5bbb6/1:1/w_2400,h_2400,c_limit/Cobb-Black-Panther.jpg"
+	}
+}
