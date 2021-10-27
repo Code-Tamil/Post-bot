@@ -2,7 +2,7 @@
 
 ## INDEX
 
-- [Postbot] (#postbot)
+- [Postbot](#postbot)
   - [INDEX](#index)
     - [Introduction](#introduction)
     - [Installation](#installation)
