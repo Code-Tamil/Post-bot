@@ -65,26 +65,26 @@ def start(update:Update, context:CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/Clown-Sec/Post-bot",
+                                url="https://github.com/Code-Tamil/Post-bot",
                             ),
                         ],
 
                         [
                             InlineKeyboardButton(
                                 text="🚑 Join US",
-                                url="https://t.me/telgrp",
+                                url="https://linktr.ee/codetamil",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates",
-                                url="https://t.me/jokers_botupdates",
+                                text="🔔 CodeTamil",
+                                url="https://t.me/code_tamil",
                             ),
                         ],
 
 
                         [
                             InlineKeyboardButton(
-                                text="🃏 Clown Sec",
-                                url="https://t.me/okatu_gang",
+                                text="🃏 Discussion Group",
+                                url="https://t.me/code_tamilgrp",
                             ),
                         ],
 
@@ -163,26 +163,26 @@ def source(update:Update, context:CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/Clown-Sec/Post-bot",
+                                url="https://github.com/Code-Tamil/Post-bot",
                             ),
                         ],
 
                         [
                             InlineKeyboardButton(
                                 text="🚑 Join US",
-                                url="https://t.me/telgrp",
+                                url="https://linktr.ee/codetamil",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates",
-                                url="https://t.me/jokers_botupdates",
+                                text="🔔 CodeTamil",
+                                url="https://t.me/code_tamil",
                             ),
                         ],
 
 
                         [
                             InlineKeyboardButton(
-                                text="🃏 Clown Sec",
-                                url="https://t.me/okatu_gang",
+                                text="🃏 Discussion Group",
+                                url="https://t.me/code_tamilgrp",
                             ),
                         ],
 
