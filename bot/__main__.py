@@ -237,7 +237,7 @@ def help_button(bot: Bot, update: Update):
             query.message.edit_text(text=AI["Text"]["HELP"],
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help")))
-        bot.answer_callback_query(query.id)
+        update.bot.answer_callback_query(query.id)
 
     except BadRequest as excp:
             if excp.message not in [
