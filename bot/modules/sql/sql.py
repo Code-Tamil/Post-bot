@@ -92,7 +92,7 @@ def DB_Updater(update):
             insert_chat_data(f, c, a, s)
 
 def insert_user_data(f, l, c, u, s):
-    user_data = Users(title = f, last_name = l,user_id = c, username = u, signup_time = s, lastseen = s )
+    user_data = Users(first_name = f, last_name = l,user_id = c, username = u, signup_time = s, lastseen = s )
     SESSION.add(user_data)
     SESSION.commit()
 
@@ -112,7 +112,7 @@ def update_chat_data(f, c, a, s):
 
 def is_regular_chat(c):
     chat_data = SESSION.query(Chats).filter_by(chat_id= c).first()
-    print( '___',chat_data.title)
+    print( '___',chat_data)
     if str(chat_data) == 'None':
         return False
     else:
