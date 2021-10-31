@@ -3,6 +3,7 @@ import logging
 import os
 import time
 import sys
+import json
 from dotenv import load_dotenv
 import telegram.ext as tg
 
@@ -26,6 +27,10 @@ START_TIME = time.time()
 load_dotenv()
 TOKEN = os.environ.get('TOKEN', None)
 DB_URI = 'sqlite:///data.db'
+
+# Texts to be Messages and Images were Loading
+with open('text.json') as f:
+  AI = json.load(f)
 
 #updater and dispatcher
 updater = tg.Updater(token=TOKEN, use_context=True)
