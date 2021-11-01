@@ -65,7 +65,7 @@ Users.__table__.create(checkfirst=True)
 Chats.__table__.create(checkfirst=True)
 
 # Defining Functions For DB
-def DB_Updater(update):
+def DB_Updater(update, context):
     # Fetching Details with update
     if update.effective_chat.type == "private":
         f = str(update.effective_user.first_name)
@@ -83,7 +83,7 @@ def DB_Updater(update):
     else:
         f = str(update.effective_chat.title)
         c = int(update.effective_chat.id)
-        a = get_admins(update)
+        a = get_admins(update, context)
         s = str(datetime.datetime.now())
         if is_regular_chat(c):
             chat_last_seen = get_last_seen_chat(c) 
@@ -143,8 +143,11 @@ def is_regular_user(c):
     else:
         return True
 
-def get_admins(update):
-        administrators = update.effective_chat.get_administrators()
+def get_members(update, context):
+    members = update.effective_chat.
+
+def get_admins(update, context):
+        administrators = context.bot.getChatAdministrators(update.effective_chat.id)
         text = "{\n"
         for admin in administrators:
             user = admin.user
@@ -153,6 +156,11 @@ def get_admins(update):
         print (text)
         return text
 
+def fetch_groups_allowed(update):
+    user_id = update.effective_user.id
+    groups = SESSION.query(Chats).filter(Chats.admins.like('%"'+ str(user_id) +'"%')).all()
+    for group in groups:
+        group.chat_id
 
 SESSION.commit()
 SESSION.close()

@@ -66,7 +66,7 @@ def get_readable_time(seconds: int) -> str:
 # /start 
 def start(update:Update, context:CallbackContext):
     args = context.args 
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     if update.effective_chat.type == "private":
             if args:
@@ -119,7 +119,7 @@ def start(update:Update, context:CallbackContext):
 def help(update:Update, context:CallbackContext):
     args = context.args 
     uptime = get_readable_time(time.time() - START_TIME)
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     update.effective_message.reply_photo(
         AI["Images"]["HELP_IMAGE"],
@@ -134,7 +134,7 @@ def get_help(update:Update, context:CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
     uptime = get_readable_time(time.time() - START_TIME)
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
@@ -252,7 +252,7 @@ def help_button(bot: Bot, update: Update):
 def about(update, context):
     args = context.args 
     uptime = get_readable_time(time.time() - START_TIME)
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     update.effective_message.reply_photo(
         AI["Images"]["ABOUT_IMAGE"],
@@ -265,7 +265,7 @@ def about(update, context):
 # /source 
 def source(update:Update, context:CallbackContext):
     args = context.args 
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     update.effective_message.reply_photo(
         AI["Images"]["SOURCE_IMAGE"],    
@@ -309,7 +309,7 @@ def source(update:Update, context:CallbackContext):
 # /addgrp 
 def addgrp(update:Update, context:CallbackContext):
     args = context.args 
-    db_response = sq.DB_Updater(update)
+    db_response = sq.DB_Updater(update, context)
 
     update.effective_message.reply_photo(
         AI["Images"]["SOURCE_IMAGE"],    
