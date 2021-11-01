@@ -144,7 +144,7 @@ def is_regular_user(c):
         return True
 
 def get_members(update, context):
-    members = update.effective_chat.
+    members = update.effective_chat
 
 def get_admins(update, context):
         administrators = context.bot.getChatAdministrators(update.effective_chat.id)
